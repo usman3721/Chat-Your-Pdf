@@ -1,4 +1,5 @@
 streamlit
+dotenv
 google.generativeai
 langchain
 transformers
