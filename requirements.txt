@@ -10,3 +10,4 @@ Werkzeug==2.2.
 gunicorn
 itsdangerous==2.1.2
 MarkupSafe==2.1.2
+langchain_google_genai
