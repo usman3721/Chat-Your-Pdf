@@ -6,3 +6,7 @@ langchain-community
 transformers
 PyPDF2
 docx2txt
+Werkzeug==2.2.
+gunicorn
+itsdangerous==2.1.2
+MarkupSafe==2.1.2
