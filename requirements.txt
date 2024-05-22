@@ -1,6 +1,4 @@
 streamlit
-json
-datetime
 google.generativeai
 langchain
 transformers
