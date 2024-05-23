@@ -20,6 +20,7 @@ from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from transformers import pipeline
 from PyPDF2 import PdfReader
 import docx2txt
+import time
 
 print(genai.configure(api_key=os.getenv("GOOGLE_API_KEY")))
 
@@ -31,6 +32,9 @@ if 'chat_history' not in st.session_state:
 
 if "messages" not in st.session_state:
     st.session_state["messages"] = []
+
+time.sleep(0.1)
+
 
 if 'level' not in st.session_state:
     st.session_state['level'] = 'Beginner'
