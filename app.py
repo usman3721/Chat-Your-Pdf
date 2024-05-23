@@ -170,7 +170,7 @@ def main():
 
 
 
-                        new_db = FAISS.load_local("faiss_index", embeddings)
+                        new_db = FAISS.load_local("faiss_index", embeddings,allow_dangerous_deserialization=True)
                         docs = new_db.similarity_search(prompt)
                             
                         response_text = chain(
