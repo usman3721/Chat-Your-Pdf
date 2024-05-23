@@ -30,8 +30,8 @@ chat = model.start_chat(history=[])
 if 'chat_history' not in st.session_state:
     st.session_state['chat_history'] = []
 
-# if "messages" not in st.session_state:
-#     st.session_state["messages"] = []
+if "messages" not in st.session_state:
+    st.session_state["messages"] = []
 
 time.sleep(0.1)
 
@@ -40,8 +40,8 @@ if 'level' not in st.session_state:
     st.session_state['level'] = 'Beginner'
 
 # Add initial assistant message if chat history is empty
-if not st.session_state["messages"]:
-    st.session_state["messages"].append({"role": "assistant", "content": "Ask Me Anything About The Uploaded Pdfs"})
+# if not st.session_state["messages"]:
+#     st.session_state["messages"].append({"role": "assistant", "content": "Ask Me Anything About The Uploaded Pdfs"})
 
 
 
