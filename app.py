@@ -32,6 +32,7 @@ if 'chat_history' not in st.session_state:
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
+    st.session_state["messages"].append({"role": "assistant", "content": "Ask Me Anything About The Uploaded Pdfs"})
 
 time.sleep(0.1)
 
