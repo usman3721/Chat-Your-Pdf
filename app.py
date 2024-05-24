@@ -31,7 +31,7 @@ if 'chat_history' not in st.session_state:
     st.session_state['chat_history'] = []
 
 if "messages" not in st.session_state:
-    st.session_state["messages"] = []
+    st.session_state.messages = []
 
 time.sleep(0.1)
 
