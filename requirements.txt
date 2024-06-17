@@ -10,3 +10,4 @@ langchain-google-genai==1.0.5
 faiss-cpu
 sentence-transformers==2.7.0
 pymongo==4.7.3
+streamlit-chat==0.1.1
