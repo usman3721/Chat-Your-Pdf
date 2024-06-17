@@ -28,9 +28,9 @@ from PIL import Image
 import base64
 from io import BytesIO
 import time
-import anthropic
-credential_path = "my_venv\client_secret_262550254503-mtga3vurdve1bi3gv161fe6oh0qe62lp.apps.googleusercontent.com.json"
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = credential_path
+# import anthropic
+# credential_path = "my_venv\client_secret_262550254503-mtga3vurdve1bi3gv161fe6oh0qe62lp.apps.googleusercontent.com.json"
+# os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = credential_path
 
 from dotenv import load_dotenv
 load_dotenv() 
