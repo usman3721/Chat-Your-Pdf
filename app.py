@@ -175,7 +175,7 @@ def main():
                                 st.markdown(f"<div id='{i}' style='text-align: left; color: black; background-color: #dae1e0; padding: 10px; border-radius: 10px; margin: 10px 0;'>{msg['content']}</div>", unsafe_allow_html=True)
 
                            
-                        new_db = FAISS.load_local("faiss_index", embeddings)
+                        new_db = FAISS.load_local("faiss_index", embeddings,allow_dangerous_deserialization=True)
                         docs = new_db.similarity_search(prompt)
 
                         response_text = chain(
